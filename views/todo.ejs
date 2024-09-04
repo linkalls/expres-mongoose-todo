@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Todoリスト</h1>
+  <form action="/todo" method="post">
+    <input name="title" type="text" />
+    <button type="submit">送信</button>
+  </form>
+  <ul>
+    <% for (let i = 0; i < todos.length; i++) { %>
+      <li><%= todos[i].title %></li>
+      <%= todos.title %>
+    <% } %>
+  </ul>
+</body>
+</html>
